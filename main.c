@@ -50,6 +50,9 @@ int main() {
     // Теперь мы можем вызвать нашу функцию
     func(5, 12);
 
+    // Освобождаем ранее занятую память
+    jit_free(jit, sizeof(instructions));
+
     printf("OK\n");
     return 0;
 }
